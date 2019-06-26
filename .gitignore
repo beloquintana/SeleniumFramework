@@ -1,0 +1,4 @@
+packages/
+SeleniumFramework/bin/
+SeleniumFramework/obj/
+.vs/
