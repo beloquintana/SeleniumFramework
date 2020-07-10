@@ -1,9 +1,5 @@
 ﻿using OpenQA.Selenium;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SeleniumFramework.PageObject
 {
@@ -14,9 +10,9 @@ namespace SeleniumFramework.PageObject
         public By LoginButton = By.Id("loginButton");
 
         public LoginPage(IWebDriver driver)
-            :base(driver)
+            : base(driver)
         {
-            if (!Driver.Title.Equals("AUT Login – Verstand QA"))
+            if (!Driver.Title.Equals("AUT Login – TestFaceClub"))
                 throw new Exception("This is not the login page");
         }
 

@@ -1,10 +1,6 @@
 ﻿using OpenQA.Selenium;
 using SeleniumFramework.Helpers;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SeleniumFramework.PageObject
 {
@@ -20,7 +16,7 @@ namespace SeleniumFramework.PageObject
         public EmployeePage(IWebDriver driver)
             : base(driver)
         {
-            if (!Driver.Title.Equals("AUT Form – Verstand QA"))
+            if (!Driver.Title.Equals("AUT Form – TestFaceClub"))
                 throw new Exception("This is not the Employee page");
         }
 
@@ -48,7 +44,7 @@ namespace SeleniumFramework.PageObject
             catch (NoAlertPresentException)
             {
                 return false;
-            }            
+            }
         }
 
     }
