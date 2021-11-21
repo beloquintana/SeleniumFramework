@@ -39,6 +39,5 @@ namespace SeleniumFramework.PageObject
             return new EmployeePage(Driver);
         }
 
-
     }
 }
